@@ -54,7 +54,6 @@
 	display: flex;
 	flex-direction: column;
 	padding: 0 10px;
-	background-color: rgba(197,216,178, .1);
 }
 .flx-dirct{
  display: flex;
@@ -80,6 +79,10 @@
 	padding-left: 15px;		
 	margin-bottom: 20px;
 	border-radius: 5px;
+}
+.newsletr,
+.contact-wrap{
+	background-color: rgba(197,216,178, .1);
 }
 
 input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -179,4 +182,5 @@ button{
 		width: 25%;
 	}
 
+	
 }
