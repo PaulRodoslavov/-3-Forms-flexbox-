@@ -18,17 +18,17 @@
 				<h2>Signup for our newsletter</h2>
 				<div class="newsletr-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit Adipisci sunt atque.</div>
 		</div>
-		<div class="contact-wrap">	
-			<div class="cont-tittle">Contact Information</div>
+		<div class="contact-wrap">				
 			<form action="POST" class="flex">
 				<fieldset>
+				<legend class="cont-tittle">Contact Information</legend>
 					<div class="flx-dirct">
 						<label for="user_name">Full Name</label>
-						<input type="name" name="Name" id="user_name" placeholder="Required">
+						<input type="text" name="Name" id="user_name" placeholder="Required" required>
 					</div>
 					<div class="flx-dirct">
 						<label for="user_email">Email Adress</label>
-						<input type="email" name="email" id="user_email" placeholder="Required">
+						<input type="email" name="email" id="user_email" placeholder="Required" required>
 					</div>
 					<div class="flx-dirct">
 						<label for="user_tel">Phone Number</label>
@@ -45,40 +45,43 @@
 					<div class="flx-dirct">
 						<label for="user_state">State</label>
 						<select name="option" id="user_state">
-							<option value="1">Option 1</option>
-							<option value="2">Option 2</option>
-							<option value="3">Option 3</option>
+							<option disabled="" selected="">Choose County</option>
+							<option value="1">Washington</option>
+							<option value="2">New York</option>
+							<option value="3">Texas</option>
 						</select>
 					</div>
 					<div class="flx-dirct">
 						<label for="user_postcode">Zip Code</label>
-						<input type="postcode" name="postcode" id="user_postcode">
+						<input type="text" name="postcode" id="user_postcode">
 					</div>	
 				</fieldset>
-				<fieldset class="line">	
-					<h2>Newsletter</h2>
-					<div class="newsletr-text right">Select the newsletters you would like to recieve.</div>
-					<div class="flex-row">
-						<input type="checkbox" name="html" id="html_news"><label for="html_news">HTML News</label>
-					</div>
-					<div class="flex-row">
-						<input type="checkbox" name="css" id="css_news"><label for="css_news">CSS News</label>
-					</div>
-					<div class="flex-row">
-						<input type="checkbox" name="js" id="Javascript"><label for="Javascript">Javascript News</label>
-					</div>
-					<div class="newsletr-text right">Newsletter format</div>
-					<div class="flex-row">
-						<input type="radio" name="format" id="html"><label for="html">HTML</label>
+				<div class="line">
+					<fieldset> 
+						<legend>Signup for our newsletter</legend>									
+						<div class="newsletr-text right">Select the newsletters you would like to recieve.</div>
+						<div class="flex-row">
+							<input type="checkbox" name="html" id="html_news"><label for="html_news">HTML News</label>
+						</div>
+						<div class="flex-row">
+							<input type="checkbox" name="css" id="css_news"><label for="css_news">CSS News</label>
+						</div>
+						<div class="flex-row">
+							<input type="checkbox" name="js" id="Javascript"><label for="Javascript">Javascript News</label>
+						</div>
+						<div class="newsletr-text right">Newsletter format</div>
+						<div class="flex-row">
+							<input type="radio" name="format" id="html"><label for="html">HTML</label>
 
-					</div>
-					<div class="flex-row">
-						<input type="radio" name="format" id="plain_text"><label for="plain_text">Plain Text</label>
-					</div>
-					<div class="newsletr-text right">Other topics you'd like to hear about</div>
-					<input type="text" id="text_sugest">
-					<button type="submit">Sign up</button>					
-				</fieldset>			
+						</div>
+						<div class="flex-row">
+							<input type="radio" name="format" id="plain_text"><label for="plain_text">Plain Text</label>
+						</div>
+						<label for="text_sugest" class="newsletr-text right">Other topics you'd like to hear about</label>
+						<textarea name="text" id="text_sugest" cols="30" rows="10"></textarea>
+						<button type="submit">Sign up</button>	
+					</fieldset>					
+				</div>			
 					<div class="copyright">Copyright The code Review</div>			
 			</form>
 		</div>
