@@ -158,9 +158,10 @@ button{
 @media (min-width: 768px){
 	.flx-dirct{
 		flex-direction: row;
+		margin-bottom: 20px;
+		align-items: center;
 	}
-	.flx-dirct:nth-child(-n+5) {
-		flex-direction: row;
+	.flx-dirct:nth-child(-n+5) {		
 		justify-content: space-between;
 	}
 
@@ -181,6 +182,21 @@ button{
 	#user_postcode{
 		width: 25%;
 	}
+	/*#user_state,
+	#user_postcode,
+	#user_name{
+		margin-bottom: 0;
+	}*/
+	
+	.flx-dirct label,
+	#user_state,
+	#user_postcode,
+	.flx-dirct > input{	
+	margin-bottom: 0;	
+}
+
+
+
 
 	
 }
